@@ -1,0 +1,13 @@
+<table id="medal-tally">
+  <th>Ranking</th>
+  <th>Country</th>
+  <th>Medals</th>
+  <tbody>
+   <tr *ngFor="let row of medalList">
+    <td>{{row.id}}</td>
+    <td><a class="nav-link" [routerLink]="['teams-data',row.country,row.id]">{{row.country | uppercase}}</a></td>
+    <td>{{row.medals}}</td>
+   </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>

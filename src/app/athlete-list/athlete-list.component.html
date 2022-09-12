@@ -1,0 +1,20 @@
+<hr>
+<h3 #highlight style="width: 250px;">Javelin Throw</h3>
+<hr>
+<table id="athletes">
+  <th>Id</th>
+  <th>Name</th>
+  <th>Best Score</th>
+  <th>Medal</th>
+  <th colspan="2"></th>
+  <tbody>
+   <tr *ngFor="let row of athletes">
+    <td>{{row.id}}</td>
+    <td>{{row.name}}</td>
+    <td>{{row.score | number : '1.2-2'}}</td>
+    <td>{{row.medal}}</td>
+    <td><button (click)="delete(row.id)">Remove</button></td>
+    <td><app-update-score [score]="row.score" (updatedScore)="update($event,row.id)"></app-update-score></td>
+   </tr>
+  </tbody>
+</table>

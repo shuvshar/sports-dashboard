@@ -1,0 +1,12 @@
+{ 
+  "teams": [ 
+
+    { "id": 1, "country": "australia", "medals": 50,"flag":"" },
+    { "id": 2, "country": "canada", "medals": 45,"flag":"" },
+    { "id": 3, "country": "england", "medals": 40,"flag":"" },
+    { "id": 4, "country": "india", "medals": 30,"flag":"🇮🇳" },
+    { "id": 5, "country": "new Zealand", "medals": 5,"flag":"" },
+    { "id": 6, "country": "scotland", "medals": 4,"flag":"" },
+    { "id": 7, "country": "nigeria", "medals": 4,"flag":"" } 
+  ]
+}
